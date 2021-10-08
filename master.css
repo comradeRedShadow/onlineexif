@@ -2,7 +2,7 @@ main {
     width: 80%;
     border: 1px solid black;
     margin: auto;
-    height: 500px;
+    height: 600px;
     overflow: auto;
 }
 
@@ -18,16 +18,20 @@ main img {
 main button {
     display: block;
     width: 100%;
+    height: 10%;
+    border: solid 1px red;
+    margin-bottom: 10px;
 }
 
 #contact {
-    width: max-content;
+    width: 50%;
+    text-align: center;
     margin: auto;
     padding: 10px;
 }
 
 #contact a {
-    font-size: small;
+    font-size: 13px;
 }
 
 #wait {
