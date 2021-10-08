@@ -1,0 +1,59 @@
+main {
+    width: 80%;
+    border: 1px solid black;
+    margin: auto;
+    height: 500px;
+    overflow: auto;
+}
+
+main img {
+    display: block;
+    margin: auto;
+}
+
+#show_exif {
+    text-align: center;
+}
+
+main button {
+    display: block;
+    width: 100%;
+}
+
+#contact {
+    width: max-content;
+    margin: auto;
+    padding: 10px;
+}
+
+#contact a {
+    font-size: small;
+}
+
+#wait {
+    display: none;
+    position: absolute;
+    background-color: wheat;
+    padding: 100px;
+    border: black solid 1px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 8%;
+
+}
+
+@media only screen and (max-width: 600px) {
+    #wait {
+        display: none;
+        position: absolute;
+        background-color: wheat;
+        padding: 100px;
+        border: black solid 1px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin-top: 30%;
+    
+    }
+  }

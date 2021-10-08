@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exif viewer and remover</title>
+    <link rel="stylesheet" href="master.css">
+</head>
+<body>
+
+    <canvas hidden id="canvas"></canvas> <!-- To strip out EXIF data --> 
+    <a hidden id="save_image" download="image"></a> <!-- For downloading the image without EXIF data -->
+    
+    <div id="wait">
+        <!-- Display this while converting canvas to image -->
+        <p>ခဏစောင့်ပါ</p>
+    </div>
+
+    <main>
+        <div id="image_preview"></div>
+        <input type="file" id="file" hidden onchange="previewImage()" accept="image/*">
+        <button onclick="clickRealBtn()">ဓတ်ပုံ</button> <!-- Custom file upload button -->
+        <button onclick="getExif()">EXIF data ပြပါ</button>
+        <button onclick="removeExif()">metadata တွေဖြတ်ပြီး<br>ပုံကို download လုပ်မယ်</button>
+        <div id="show_exif"></div>
+    </main>
+
+    <div id="contact">
+        <a href="https://bit.ly/donatebymemes">Meme လုပ်ရင်းလှူ</a>
+        <a href="https://www.facebook.com/parathamemes/posts/135009532165573">Meme လုပ်ရင်းလှူ အကြောင်း</a>
+        <a href="https://www.facebook.com/parathamemes">Facebook Page</a>
+        <a href="https://github.com/comradeRedShadow">Github</a>
+    </div>
+
+    <iframe data-aa="1807622" src="//acceptable.a-ads.com/1807622" style="border:0px; padding:0; width:100%; height:100%; margin: auto; overflow:hidden; background-color: transparent;" ></iframe>
+
+    <script src="https://cdn.jsdelivr.net/npm/exif-js"></script> <!-- EXIF library -->
+    <script src="main.js"></script>
+</body>
+</html>
