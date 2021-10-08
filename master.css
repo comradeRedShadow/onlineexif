@@ -51,9 +51,12 @@ main button {
         padding: 100px;
         border: black solid 1px;
         position: absolute;
+        width: 100%;
+        word-wrap: break-word;
         left: 50%;
         transform: translate(-50%, 0);
         margin-top: 30%;
+        text-align: center;
     
     }
   }
